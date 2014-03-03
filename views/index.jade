@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title Sylvia
+    script(src="/vender/jquery/dist/jquery.js")
+    script(src="/vender/underscore/underscore.js")
+    script(src="/vender/backbone/backbone.js")
+    script(src="/vender/d3/d3.js")
+    script(src="/vender/jsnetworkx/jsnetworkx.js")
+
+    link(rel="stylesheet", href="/vender/pure/pure.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+
+  body
+    #content.pure-g
+      .pure-u-1-6
+        #panel.pure-form.pure-form-stacked
+          h1 Sylvia Plath
+
+          img(src="/images/plath.jpg", width="100%")
+          blockquote kiss me and you'll see how important I am
+
+          h3 Consciousness
+
+          label(for="query") Query
+          input.pure-input-1(type="text", name="query", id="query")
+          
+          
+          label(for="limit") Limit
+          input.pure-input-1(type="text" name="limit", value="10", id="limit")
+
+          label(for="selfaware") 
+            p 
+              input(type="checkbox" name="selfaware" id="selfaware")
+              |  Self Aware
+
+          button.pure-button.pure-button-primary.pure-input-1-2(name="query") Query
+          button.pure-button.pure-input-1-2(name="clearQuery") Clear
+
+          h3 Legend
+          #legend
+
+      .pure-u-5-6
+        #canvas
+    script(src="/javascripts/app.js")

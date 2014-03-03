@@ -1,0 +1,22 @@
+html,
+body,
+#content {
+  height: 1000px;
+}
+#legend p {
+  padding: 10px;
+  margin: 0px;
+}
+#panel {
+  padding: 1px;
+  border-right: 1px solid;
+  height: 100%;
+}
+blockquote {
+  font-family: "Georgia", serif;
+  color: #666;
+  font-style: italic;
+  line-height: 1.8;
+  border-left: 5px solid #ddd;
+  padding-left: 1.5em;
+}
